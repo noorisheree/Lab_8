@@ -1,0 +1,13 @@
+Task 3 Notes
+
+1. What changed in the customer table when the relationship direction was set to Both?
+When the Product slicer was set to Laptop, the customer table showed only Ali Khan instead of all four customers. With Both-direction filtering, the filter could travel from Products through Sales back to Customers.
+
+2. Which customer has no orders?
+Hina has no orders.
+
+3. Which product was never sold?
+Monitor was never sold.
+
+4. Why does Computers Sales show 900 on the Accessories row?
+The Sales % of Total measure uses CALCULATE with ALL(Products) and ALL(Customers). These functions remove filters from the Products and Customers tables when calculating the overall sales total, affecting how the measure responds to category and customer filters.
